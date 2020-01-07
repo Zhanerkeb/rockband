@@ -1,0 +1,36 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Main</title>
+		<meta charset="utf-8">
+		<script
+		  src="https://code.jquery.com/jquery-3.4.1.min.js"
+		  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+		  crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<!-- <div id="menu"></div>
+
+		<script>
+			$.ajax({
+		        method: "GET",
+		        data: "{subCategoryId: 1}",
+		        dataType: "json",
+		        url: "http://localhost:5000/product/bySubcategory?page=1"
+		    }).done(function (data) {
+		        console.log(data)
+		    }).fail(function (err) {
+		        console.log(err);
+		    })
+		</script> -->
+
+		<form action="http://localhost:5000/subcategory" method="POST" enctype="multipart/form-data">
+			<input type="text" name="name" placeholder="name">
+			<input type="number" name="categoryId" placeholder="category ID">
+			<input type="file" name="image">
+			<input type="submit">
+		</form>
+
+		<img src="http://localhost:5000/media/SubCategoryImages/a1571481804237.png" alt="">
+	</body>
+</html>
