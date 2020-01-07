@@ -1,0 +1,51 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Main</title>
+		<meta charset="utf-8">
+		<script
+		  src="https://code.jquery.com/jquery-3.4.1.min.js"
+		  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+		  crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div id="menu"></div>
+
+		<script>
+
+			function send(e) {
+				e.preventDefault()
+
+				console.log(document.getElementById('name'))
+
+				$.ajax({
+					method: "GET",
+					data: "{subCategoryId: " + name + "}",
+					dataType: "json",
+					url: "http://localhost:5000/subcategory"
+				}).done(function (data) {
+					console.log(data);
+					for (let i = 0; i < data.length; i++) {
+						let div = document.getElementById('menu')
+
+						div.innerHTML += "<p>" + data[i].name + "</p>" +
+								"<img src='" + data[i].image + "'><br><br>"
+
+					}
+				}).fail(function (err) {
+					console.log(err);
+				})
+			}
+
+		</script>
+
+		<form action="http://localhost:5000/subcategory" method="POST" enctype="multipart/form-data">
+			<input type="text" name="name" placeholder="name" id="name">
+			<input type="number" name="categoryId" placeholder="category ID" id="categoryId">
+			<input type="file" name="image" id="image">
+			<input type="submit">
+		</form>
+
+		<img src="media/SubCategoryImages/a1571481804237.png" alt="">
+	</body>
+</html>

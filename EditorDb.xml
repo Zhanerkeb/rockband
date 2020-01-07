@@ -1,0 +1,105 @@
+<?xml version = "1.0"?>
+<EditorDB>
+    <editor id = "1">
+        <name>Talap Parasat</name>
+        <publicationId>1</publicationId>
+    </editor>
+    <editor id = "2">
+        <name>Serdaly Saken</name>
+        <publicationId>2</publicationId>
+    </editor>
+
+
+
+    <journalist id ="1">
+        <name>Ramazan</name>
+        <publicationId>1</publicationId>
+    </journalist>
+    <journalist id ="2">
+        <name>Bauka</name>
+        <publicationId>1</publicationId>
+    </journalist>
+    <journalist id ="3">
+        <name>Damir</name>
+        <publicationId>2</publicationId>
+    </journalist>
+
+
+
+    <publication id="1">
+        <name>New York Times</name>
+        <foundedIn>1995</foundedIn>
+    </publication>
+    <publication id="2">
+        <name>BBC</name>
+        <foundedIn>2005</foundedIn>
+    </publication>
+
+
+
+    <paper id="1">
+        <publicationId>1</publicationId>
+        <numberOfPapers>10</numberOfPapers>
+        <releasedIn>08.11.2019</releasedIn>
+    </paper>
+    <paper id="2">
+        <publicationId>1</publicationId>
+        <numberOfPapers>12</numberOfPapers>
+        <releasedIn>05.11.2019</releasedIn>
+    </paper>
+    <paper id="3">
+        <publicationId>2</publicationId>
+        <numberOfPapers>8</numberOfPapers>
+        <releasedIn>30.10.2019</releasedIn>
+    </paper>
+
+
+
+    <article id="1">
+        <title>Article 1</title>
+        <content>Article 1 Content</content>
+        <journalistId>1</journalistId>
+    </article>
+
+    <article id="2">
+        <title>Article 2</title>
+        <content>Article 2 Content</content>
+        <journalistId>1</journalistId>
+    </article>
+
+    <article id="3">
+        <title>Article 3</title>
+        <content>Article 3 Content</content>
+        <journalistId>2</journalistId>
+    </article>
+
+    <article id="4">
+        <title>Article 4</title>
+        <content>Article 4 Content</content>
+        <journalistId>3</journalistId>
+    </article>
+
+
+
+    <publishedArticle id="1">
+        <articleId>1</articleId>
+        <paperId>1</paperId>
+        <editorId>1</editorId>
+        <rate>5</rate>
+    </publishedArticle>
+
+    <publishedArticle id="2">
+        <articleId>3</articleId>
+        <paperId>2</paperId>
+        <editorId>1</editorId>
+        <rate>4</rate>
+    </publishedArticle>
+
+    <publishedArticle id="3">
+        <articleId>4</articleId>
+        <paperId>3</paperId>
+        <editorId>2</editorId>
+        <rate>4.5</rate>
+    </publishedArticle>
+
+</EditorDB>
