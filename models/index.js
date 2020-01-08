@@ -18,7 +18,7 @@ if (config.use_env_variable) {
 sequelize
     .authenticate()
     .then(() => {
-      console.log('MSSQL Connected');
+      console.log('PostgreSQL Connected');
     })
     .catch(err => {
       console.error('Unable to connect to the MSSQL:', err);

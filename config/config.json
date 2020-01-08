@@ -1,18 +1,20 @@
 {
   "development": {
-    "username": "rock_band_admin",
-    "password": "qwerty",
+    "username": "postgres",
+    "password": "1307",
     "database": "RockBand",
     "host": "localhost",
-    "dialect": "mssql"
-
+    "dialect": "postgres",
+    "define": {
+      "timestamps": false
+    }
   },
   "test": {
-    "username": "rock_band_admin",
-    "password": "qwerty",
+    "username": "postgres",
+    "password": "1307",
     "database": "database_test",
     "host": "127.0.0.1",
-    "dialect": "mysql",
+    "dialect": "postgres",
     "operatorsAliases": false
   },
   "production": {
@@ -20,7 +22,7 @@
     "password": null,
     "database": "database_production",
     "host": "127.0.0.1",
-    "dialect": "mysql",
+    "dialect": "postgres",
     "operatorsAliases": false
   }
 }
