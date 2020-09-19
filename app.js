@@ -71,4 +71,4 @@ app.use('/api/songs', song.router);
 app.use('/api/admin', passportLib.authenticate('jwt', {session: false}),
     adminAuth, admin.router);
 
-app.listen(5000, () => console.log(`Server running on port 5000`));
+app.listen(5000, () => console.log(`Server on port 5000`));
